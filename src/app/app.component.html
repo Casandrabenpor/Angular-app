@@ -1,4 +1,11 @@
 <h1> Hola {{title}}</h1>
 <button (click)="changeTitle()">Change</button>
 
-<app-product [product]="product" *ngFor="let product of products"></app-product>
+<ul>
+  <li>
+    <a routerLink="/home">Products</a>
+    <a routerLink="/contact">Contact</a>
+
+  </li>
+</ul>
+<router-outlet></router-outlet>
